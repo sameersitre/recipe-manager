@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './NavigationBar.css';
 class NavigationBar extends Component {
-    
-    constructor(){
-        super();
-        this.state={
-            display:"none",
 
-            username:"",
+    constructor() {
+        super();
+        this.state = {
+            display: "none",
+
+            username: "",
+            password: "",
         }
     }
     btnSignInClick() {
@@ -16,15 +17,15 @@ class NavigationBar extends Component {
 
     btnSubmitClick() {
         //alert("submit clicked")
-         alert(this.state.username+"  ")
+        alert(this.state.username + "  "+ this.state.password)
     }
 
-    handleOnChange(event) {
-        this.setState({username:event.target.value});
-
-        //this.setState({item:});
-        
-      }
+    usernameOnChange(event) {
+        this.setState({ username: event.target.value });
+    }
+    passwordOnChange(event) {
+        this.setState({ password: event.target.value });
+    }
     render() {
         return (
             <div  >
@@ -38,8 +39,8 @@ class NavigationBar extends Component {
 
                     <li >
 
-                        <input className="inputbox1" placeholder="username" value={this.state.inputValue} onChange={this.handleOnChange.bind(this)}  />
-                        <input className="inputbox2" placeholder="password" value={this.state.inputValue} onChange={this.handleOnChange.bind(this)}  />
+                        <input className="inputbox1" placeholder="username" value={this.state.inputValue} onChange={this.usernameOnChange.bind(this)} />
+                        <input className="inputbox2" placeholder="password" value={this.state.inputValue} onChange={this.passwordOnChange.bind(this)} />
                         <button className="button1" onClick={this.btnSubmitClick.bind(this)}>Submit</button>
                     </li>
                 </ul>
