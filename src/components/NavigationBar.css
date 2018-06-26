@@ -1,0 +1,58 @@
+.leftposition {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(49, 95, 63);
+    width: inherit
+    
+}
+
+.hidetag{
+    display: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    font-size: 18px; 
+    padding: 20px 30px;
+    text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(36, 139, 45);
+    float: right;
+}
+
+.active {
+    background-color: #4CAF50;
+    
+}
+
+.inputbox1{
+    width: 200px;
+  height: 40px;
+  border: 1px solid lightgray;
+  padding: 3px;
+  margin: 2px;
+  size: 28px;
+}
+.inputbox2{
+    width: 200px;
+    height: 40px;
+    border: 1px solid lightgray;
+    padding: 3px;
+    margin: 2px;
+}
+
+.button1{
+    width: 100px;
+    height: 50px;
+}
