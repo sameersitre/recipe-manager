@@ -17,7 +17,7 @@ class NavigationBar extends Component {
 
     btnSubmitClick() {
         //alert("submit clicked")
-        alert(this.state.username + "  "+ this.state.password)
+        alert(this.state.username + "  " + this.state.password)
     }
 
     usernameOnChange(event) {
@@ -43,7 +43,13 @@ class NavigationBar extends Component {
                         <input className="inputbox2" placeholder="password" value={this.state.inputValue} onChange={this.passwordOnChange.bind(this)} />
                         <button className="button1" onClick={this.btnSubmitClick.bind(this)}>Submit</button>
                     </li>
+                    <button
+                        className="button1"
+                        background-color="cornflowerblue"
+                        float="right">
+                     </button>
                 </ul>
+
 
 
             </div>
