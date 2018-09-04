@@ -2,7 +2,7 @@
   "name": "recipe-manager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sameersitre.github.io/recipemanager/",
+  "homepage": "https://sameersitre.github.io/recipe-manager/",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "package": "^1.0.1",
